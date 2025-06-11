@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Places</title>
+</head>
+<body>
+    <!-- Modern Header Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/logo.png"
+                    alt="Pine City Zoo Logo">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="map.html" class="nav-link">Map</a></li>
+                    <li><a href="animals-overview.html" class="nav-link">Our Animals</a></li>
+                    <li><a href="places.html" class="nav-link active">Places</a></li>
+                    <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                </ul>
+
+                <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/logo.png"
+                    alt="Pine City Zoo Logo">
+            </div>
+            <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+        </div>
+
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="map.html" class="mobile-nav-link active">Map</a></li>
+            <li><a href="animals-overview.html" class="mobile-nav-link">Our Animals</a></li>
+            <li><a href="places.html" class="mobile-nav-link active">Places</a></li>
+            <li><a href="experiences.html" class="mobile-nav-link">Experiences</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+        <section class="animals-hero">
+            <h1>Amazing Places to Explore</h1>
+            <p class="tagline">Discover incredible destinations and experiences throughout Pine City Zoo, from thrilling attractions to peaceful retreats and delicious dining options.</p>
+        </section>
+
+        <section class="animal-filters">
+            <button class="filter-button active">All Places</button>
+            <button class="filter-button">Entertainment</button>
+            <button class="filter-button">Dining</button>
+            <button class="filter-button">Adventure</button>
+            <button class="filter-button">Nature</button>
+        </section>
+
+        <div class="animals-container">
+            
+            <!-- Amphitheatre -->
+            <div class="place-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/garden-amphitheater.jpg" alt="Amphitheatre">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Amphitheatre</h2>
+                        <span class="location-badge">Entertainment</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>Catch an educational and entertaining event in our state-of-the-art outdoor amphitheatre. From wildlife presentations to musical performances, there's always something exciting happening for the whole family.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-theater-masks"></i>
+                        </div>
+
+                        <div class="location-details">
+                            Live shows, educational presentations, and special events
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Insect House -->
+            <div class="place-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/insect-house-bee-unsplash.jpg" alt="Insect House">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Insect House</h2>
+                        <span class="location-badge">Discovery</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>Creepy crawlies of every kind you can imagine! Explore the fascinating world of insects in our climate-controlled habitat featuring butterflies, beetles, and exotic species from around the globe.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div class="location-details">
+                            Interactive exhibits with butterflies and exotic insects
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Monkey Trail -->
+            <div class="place-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/monkey-trail.jpg" alt="Monkey Trail">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Monkey Trail</h2>
+                        <span class="location-badge">Adventure</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>Take a walk or ride through this challenging obstacle course designed to mimic monkey habitats. Perfect for active visitors looking for an adventure and a fun way to experience nature up close.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="location-details">
+                            Adventure obstacle course for all ages
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Wild Things Coffee Shop -->
+            <div class="place-card">
+                <div class="animal-image">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&h=600&fit=crop&crop=center" alt="Wild Things Coffee Shop">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Wild Things Coffee Shop</h2>
+                        <span class="location-badge">Dining</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>Enjoy a cuppa or a dessert here. Our cozy coffee shop offers premium beverages, fresh pastries, and a perfect spot to rest and recharge during your zoo adventure.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="location-details">
+                            Premium coffee, fresh pastries, and cozy atmosphere
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Lost Forest -->
+            <div class="place-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/lost-forest.jpg" alt="Lost Forest">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Lost Forest</h2>
+                        <span class="location-badge">Nature</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>Relax and have a picnic under the trees by the lake. This peaceful sanctuary offers a perfect escape from the excitement with serene walking paths, picnic areas, and beautiful natural scenery.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="location-details">
+                            Peaceful picnic areas and nature walking trails
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Mo's Pizza -->
+            <div class="place-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/mos-pizza.jpg" alt="Mo's Pizza">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Mo's Pizza</h2>
+                        <span class="location-badge">Dining</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>Scrumptuous pizzas and pastas for the family. Our wood-fired pizzas and authentic Italian dishes provide the perfect meal for hungry zoo explorers looking for hearty, delicious food.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-pizza-slice"></i>
+                        </div>
+                        <div class="location-details">
+                            Wood-fired pizza and authentic Italian cuisine
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Dine @The Zoo -->
+            <div class="place-card">
+                <div class="animal-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop&crop=center" alt="Dine @The Zoo">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Dine @The Zoo</h2>
+                        <span class="location-badge">Fine Dining</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>Enjoy gourmet meals in a serene outdoor setting. Our flagship restaurant offers fine dining with panoramic views of the zoo's most beautiful landscapes and expertly crafted cuisine.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="location-details">
+                            Gourmet dining with scenic zoo views
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="newsletter">
+        <h2>Stay Updated on Zoo Events</h2>
+        <p>Subscribe to our newsletter for updates on special events, new attractions, and dining specials.</p>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+            <button type="submit" class="newsletter-button">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Modern Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="bottom-nav-container">
+            <a href="membership.html" class="bottom-nav-item"> <i class="fas fa-id-card"></i> <span>Membership</span></a>
+            <a href="contact.html" class="bottom-nav-item"> <i class="fas fa-phone"></i> <span>Contact</span></a>
+            <a href="news.html" class="bottom-nav-item"> <i class="fas fa-newspaper"></i> <span>News</span></a>
+            <a href="weather.html" class="bottom-nav-item"> <i class="fas fa-cloud-sun"></i> <span>Weather</span></a>
+            <a href="feedback.html" class="bottom-nav-item"> <i class="fas fa-comment"></i> <span>Feedback</span></a>
+        </div>
+    </nav>
+    <script src="places.js"></script>
+</body>
+</html>

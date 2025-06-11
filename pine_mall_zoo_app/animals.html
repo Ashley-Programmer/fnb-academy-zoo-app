@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font import -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Animals</title>
+</head>
+
+<body>
+    <!-- Modern Header Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/logo.png"
+                    alt="Pine City Zoo Logo">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="map.html" class="nav-link">Map</a></li>
+                    <!-- <li><a href="animals-overview.html" class="nav-link active">Our Animals</a></li> -->
+                    <li><a href="#" class="nav-link active">Animals</a></li>
+                    <li><a href="places.html" class="nav-link">Places</a></li>
+                    <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                </ul>
+
+                <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/logo.png"
+                    alt="Pine City Zoo Logo">
+            </div>
+            <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+        </div>
+
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="map.html" class="mobile-nav-link active">Map</a></li>
+            <!-- <li><a href="animals-overview.html" class="mobile-nav-link active">Our Animals</a></li> -->
+            <li><a href="#" class="mobile-nav-link active">Animals</a></li>
+            <li><a href="places.html" class="mobile-nav-link">Places</a></li>
+            <li><a href="experiences.html" class="mobile-nav-link">Experiences</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+        <section class="animals-hero">
+            <h1>Meet Our Amazing Animals</h1>
+            <p class="tagline">Discover the incredible diversity of wildlife at Pine City Zoo, home to over 200 species
+                from around the world living in naturalistic habitats.</p>
+        </section>
+
+        <section class="animal-filters">
+            <button class="filter-button active">All Animals</button>
+            <button class="filter-button">Mammals</button>
+            <button class="filter-button">African Species</button>
+            <button class="filter-button">Asian Species</button>
+            <button class="filter-button">Australian Species</button>
+        </section>
+
+        <div class="animals-container">
+            
+            <!-- Elephants -->
+            <div class="animal-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/elephant.jpg" alt="African and Asian Elephants">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Elephants</h2>
+                        <span class="location-badge">African & Asian</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>The largest land mammals on Earth, elephants are known for their intelligence and strong
+                            social bonds. They have distinctive trunks used for breathing, grasping objects, and lifting
+                            water.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+
+                        <div class="location-details">
+                            Pen E22, next to the amphitheatre
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Giraffes -->
+            <div class="animal-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/giraffe-large.jpg" alt="African Giraffes">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Giraffes</h2>
+                        <span class="location-badge">African</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>The tallest living terrestrial animals, giraffes are known for their extremely long necks and
+                            distinctive coat patterns. They feed primarily on acacia leaves at heights other herbivores
+                            cannot reach.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-details">
+                            G15, just beyond the research centre
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Koalas -->
+            <div class="animal-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/koala.jpg" alt="Australian Koalas">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Koalas</h2>
+                        <span class="location-badge">Australian</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>These arboreal marsupials are native to Australia and are easily recognizable by their stout,
+                            tailless bodies and large heads with fluffy ears. Koalas primarily eat eucalyptus leaves and
+                            sleep up to 20 hours a day.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-details">
+                            Next to the giraffe enclosure
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Dusky Leaf Monkeys -->
+            <div class="animal-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/monkey.jpg" alt="Dusky Leaf Monkeys">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Dusky Leaf Monkeys</h2>
+                        <span class="location-badge">Asian</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>Also known as spectacled langurs, these primates are native to Malaysia, Burma, and Thailand.
+                            They have distinctive facial markings that give them their "spectacled" appearance.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-details">
+                            Monkey cage near the Monkey Trail
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Pandas -->
+            <div class="animal-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/panda.jpg" alt="Giant Pandas">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Giant Pandas</h2>
+                        <span class="location-badge">Asian</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>Native to south central China, giant pandas are easily recognized by their distinctive black
+                            and white coloration. Despite belonging to the order Carnivora, their diet consists almost
+                            entirely of bamboo.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-details">
+                            Panda Canyon
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Lions -->
+            <div class="animal-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/lion.jpg" alt="African Lions">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Lions</h2>
+                        <span class="location-badge">African</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>The second-largest big cat after tigers, lions are known for their majestic manes and
+                            powerful roars. Once widespread across Africa, Europe, and Asia, they are now primarily
+                            found in sub-Saharan Africa with a small population in India.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-details">
+                            Northern Frontier
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Gemsbok -->
+            <div class="animal-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/gemsbok.jpg" alt="African Gemsbok">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Gemsbok</h2>
+                        <span class="location-badge">African</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>These large antelopes are native to the arid regions of Southern Africa, such as the Kalahari
+                            Desert. They are depicted on the coat of arms of Namibia and are known for their impressive
+                            horns and striking facial markings.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-details">
+                            Just beyond Panda Canyon
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Gorillas -->
+            <div class="animal-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/gorilla.jpg" alt="African Gorillas">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Gorillas</h2>
+                        <span class="location-badge">African</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>The largest living primates, gorillas are ground-dwelling herbivores native to the forests of
+                            central Africa. Their DNA is highly similar to humans, making them our closest living
+                            relatives after chimpanzees and bonobos.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-details">
+                            Gorilla cage at GO12
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Warthogs -->
+            <div class="animal-card">
+                <div class="animal-image">
+                    <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/warthog.jpg" alt="African Warthogs">
+                </div>
+
+                <div class="animal-content">
+                    <div class="animal-title">
+                        <h2>Warthogs</h2>
+                        <span class="location-badge">African</span>
+                    </div>
+
+                    <div class="animal-description">
+                        <p>These wild pigs are found in open and semi-open habitats in sub-Saharan Africa. They are
+                            named for their facial wattles and are known for their distinctive tusks and bristly hair
+                            along their backs.</p>
+                    </div>
+
+                    <div class="animal-location">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-details">
+                            WA11, near the elephant enclosure
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="newsletter">
+        <h2>Stay Updated on Our Animals</h2>
+        <p>Subscribe to our newsletter for news about births, new arrivals, and special animal events.</p>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+            <button type="submit" class="newsletter-button">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Modern Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="bottom-nav-container">
+            <a href="membership.html" class="bottom-nav-item"> <i class="fas fa-id-card"></i> <span>Membership</span></a>
+            <a href="contact.html" class="bottom-nav-item"> <i class="fas fa-phone"></i> <span>Contact</span></a>
+            <a href="news.html" class="bottom-nav-item"> <i class="fas fa-newspaper"></i> <span>News</span></a>
+            <a href="weather.html" class="bottom-nav-item"> <i class="fas fa-cloud-sun"></i> <span>Weather</span></a>
+            <a href="feedback.html" class="bottom-nav-item"> <i class="fas fa-comment"></i> <span>Feedback</span></a>
+        </div>
+    </nav>
+
+    <script src="./animals.js"></script>
+</body>
+</html>

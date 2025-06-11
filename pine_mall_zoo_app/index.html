@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font import -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Modern Header Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/logo.png"
+                    alt="Pine City Zoo Logo">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="map.html" class="nav-link">Map</a></li>
+                    <li><a href="animals-overview.html" class="nav-link">Our Animals</a></li>
+                    <li><a href="places-overview.html" class="nav-link">Our Places</a></li>
+                    <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                </ul>
+
+                <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/logo.png"
+                    alt="Pine City Zoo Logo">
+            </div>
+            <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+        </div>
+
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="map.html" class="mobile-nav-link">Map</a></li>
+            <li><a href="animals-overview.html" class="mobile-nav-link">Our Animals</a></li>
+            <li><a href="places-overview.html" class="mobile-nav-link">Our Places</a></li>
+            <li><a href="experiences.html" class="mobile-nav-link">Experiences</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Quick Info Bar -->
+        <section class="quick-info">
+            <div class="info-item">
+                <div class="info-icon"><i class="fas fa-clock"></i></div>
+                <div class="info-text">
+                    <strong>Open Mon - Sat</strong>
+                    9:00 AM - 5:00 PM
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon"><i class="fas fa-ticket"></i></div>
+                <div class="info-text">
+                    <strong>Tickets</strong>
+                    From R233.5
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon"><i class="fas fa-calendar-alt"></i></div>
+                <div class="info-text">
+                    <strong>Next Event</strong>
+                    Penguin Feeding (2:00 PM)
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Discover The Wonders of Wildlife</h1>
+            <p class="tagline">
+                Embark on an unforgettable journey through Pine City Zoo's diverse habitats and get up close with
+                magnificent
+                creatures from around the globe.
+            </p>
+            <a href="#map-container" class="cta-button">Plan Your Visit</a>
+        </section>
+
+        <!-- Interactive Map Preview -->
+        <section class="map-preview">
+            <h2>Zoo Map</h2>
+            <p>Plan your adventure with our interactive zoo map</p>
+            <div class="map-container" id="map-container">
+                <img src="/my-fnb-pine-city-zoo/pine_mall_zoo_app/pineCityZooImages/images/map.png"
+                    alt="Zoo Map Preview">
+                <a href="map.html" class="map-link">View Full Map</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🦁</div>
+                <h2>Animal Kingdom</h2>
+                <p>Explore our diverse collection of over 200 species from six continents in carefully designed,
+                    naturalistic habitats.</p>
+                <a href="animals-overview.html" class="feature-link">Meet Our Animals</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎡</div>
+                <h2>Experiences & Shows</h2>
+                <p>Engage with our expert zookeepers, watch live feedings, and enjoy interactive wildlife presentations
+                    throughout the day.</p>
+                <a href="experiences.html" class="feature-link">View Schedule</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎟️</div>
+                <h2>Membership Benefits</h2>
+                <p>Enjoy unlimited visits, exclusive events, and special discounts with our annual membership packages.
+                </p>
+                <a href="#" class="feature-link">Join Today</a>
+            </div>
+        </section>
+
+        <!-- Announcements Section -->
+        <section class="announcements">
+            <h2>🦒 Zoo News</h2>
+            <div class="news-item">
+                <h3>New Baby Giraffe Born!</h3>
+                <p>
+                    We're thrilled to announce the arrival of Zara, our newest Masai giraffe calf.
+                    Born last week and already standing tall at 6 feet,
+                    she's captivating visitors with her playful personality and curious nature.
+                </p>
+                <a href="#" class="news-link">Read Full Story</a>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <h2>🌿 Stay Connected with Wildlife</h2>
+            <p>Subscribe to our newsletter for the latest zoo updates, conservation news, and exclusive offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Modern Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="bottom-nav-container">
+            <a href="membership.html" class="bottom-nav-item"> <i class="fas fa-id-card"></i> <span>Membership</span></a>
+            <a href="contact.html" class="bottom-nav-item"> <i class="fas fa-phone"></i> <span>Contact</span></a>
+            <a href="news.html" class="bottom-nav-item"> <i class="fas fa-newspaper"></i> <span>News</span></a>
+            <a href="weather.html" class="bottom-nav-item"> <i class="fas fa-cloud-sun"></i> <span>Weather</span></a>
+            <a href="feedback.html" class="bottom-nav-item"> <i class="fas fa-comment"></i> <span>Feedback</span></a>
+        </div>
+    </nav>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

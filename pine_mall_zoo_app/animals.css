@@ -1,0 +1,442 @@
+/* Base Styles and Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 0.5em;
+}
+
+/* Header & Navigation */
+.logo-section {
+    background-image: url("/beginner/pine_mall_zoo_app/pineCityZooImages/images/wood-bg.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* Top navigation */
+.header-top {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo2 {
+    background-color: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.nav-links.active {
+    color: var(--primary-color);
+}
+
+.nav-links.active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Animals Hero Section */
+.animals-hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(74, 140, 28, 0.8), rgba(139, 195, 74, 0.7)),
+        url('/beginner/pine_mall_zoo_app/pineCityZooImages/images/giraffe-large.jpg') center/cover no-repeat;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.animals-hero h1 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.animals-hero .tagline {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+/* Animal Filters */
+.animal-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filter-button {
+    background-color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: var(--dark-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.filter-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.filter-button.active {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 5px 15px rgba(74, 140, 28, 0.3);
+}
+
+/* Animals Container and Cards */
+.animals-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.animal-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.animal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.animal-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.animal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.animal-card:hover .animal-image img {
+    transform: scale(1.05);
+}
+
+.animal-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.animal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.animal-title h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.location-badge {
+    background-color: rgba(139, 195, 74, 0.15);
+    color: var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.animal-description {
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.animal-description p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.animal-location {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.location-icon {
+    margin-right: 12px;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.newsletter h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.newsletter p {
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.newsletter-button {
+    padding: 15px 30px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer Navigation */
+.footer-nav {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-nav .nav-menu ul {
+  justify-content: center;
+}
+
+.footer-nav .nav-links {
+  color: white;
+  opacity: 0.8;
+}
+
+.footer-nav .nav-links:hover {
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .animals-container {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 130px;
+    }
+
+    .nav-menu ul {
+        gap: 20px;
+    }
+
+    .animals-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .animals-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-input,
+    .newsletter-button {
+        border-radius: 50px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 120px;
+    }
+
+    .logo-section {
+        height: 60px;
+    }
+
+    .header-top {
+        height: 60px;
+        top: 60px;
+    }
+
+    .nav-menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .animals-hero {
+        padding: 50px 15px;
+    }
+
+    .animals-hero h1 {
+        font-size: 2rem;
+    }
+
+    .animals-container {
+        grid-template-columns: 1fr;
+    }
+
+    .animal-filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-button {
+        width: 80%;
+    }
+}
+
+/* Add Font Awesome Icons (you'll need to include the Font Awesome library) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
